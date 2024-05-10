@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintVertical_bias=".4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/note"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/develop"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/red"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/developer"/>
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/notes_app"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:gravity="center"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/notesTv"
+        android:gravity="center"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="@string/heardText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        app:layout_constraintTop_toBottomOf="@id/notesTv"
+        app:layout_constraintBottom_toTopOf="@id/develop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="?android:attr/preferenceStyle"
+        android:progressTint="@color/red"
+        android:layout_width="25dp"
+        android:layout_height="25sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

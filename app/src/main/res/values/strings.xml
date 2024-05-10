@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Notes App</string>
+    <string name="heardText">Life is too Fast don\'t forget anything\n just Note it!</string>
+    <string name="notes_app">Notes App</string>
+    <string name="developer">by\nYour Developer here</string>
+    <string name="delete">Are you sure want to delete\n this Note?</string>
+</resources>
